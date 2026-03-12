@@ -3,17 +3,17 @@
 import { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Menu, X, Github, Linkedin, Mail, Globe } from "lucide-react"
+import { Menu, X, Github, Linkedin, Mail, Globe, Home, Plane, Leaf, BarChart3, Bot, FileText, Info } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const navItems = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Travel Behaviour", href: "/travel-behaviour" },
-  { name: "Tourism Social Environmental Impact", href: "/environmental-impact" },
-  { name: "Tourism Economic", href: "/tourism-economic" },
-  { name: "AI Insights", href: "/ai-insights" },
-  { name: "Reports", href: "/reports" },
+  { name: "Home", href: "/", icon: Home },
+  { name: "About", href: "/about", icon: Info },
+  { name: "Travel Analytics", href: "/travel-behaviour", icon: Plane },
+  { name: "Sustainability", href: "/environmental-impact", icon: Leaf },
+  { name: "Economic Impact", href: "/tourism-economic", icon: BarChart3 },
+  { name: "Insights", href: "/ai-insights", icon: Bot },
+  { name: "Reports", href: "/reports", icon: FileText },
 ]
 
 export function Navbar() {
@@ -24,7 +24,7 @@ export function Navbar() {
   return (
     <>
       <nav className="fixed top-0 left-0 right-0 z-50 glass-card border-b border-border/50">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2">
@@ -33,21 +33,25 @@ export function Navbar() {
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center gap-1">
-              {navItems.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className={cn(
-                    "px-3 py-2 text-sm font-medium rounded-lg transition-all duration-200",
-                    pathname === item.href
-                      ? "text-white bg-primary/20 border border-primary/40"
-                      : "text-gray-300 hover:text-white hover:bg-white/5"
-                  )}
-                >
-                  {item.name}
-                </Link>
-              ))}
+            <div className="hidden lg:flex items-center gap-0.5">
+              {navItems.map((item) => {
+                const Icon = item.icon
+                return (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className={cn(
+                      "flex items-center gap-1.5 px-2.5 py-2 text-xs font-semibold rounded-lg transition-all duration-200 whitespace-nowrap",
+                      pathname === item.href
+                        ? "text-white bg-blue-500/20 border border-blue-400/50 shadow-[0_0_10px_rgba(59,130,246,0.3)]"
+                        : "text-white hover:text-white hover:bg-white/10 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
+                    )}
+                  >
+                    <Icon className="h-3.5 w-3.5" />
+                    {item.name}
+                  </Link>
+                )
+              })}
             </div>
 
             {/* Profile & Mobile Menu */}
@@ -75,21 +79,25 @@ export function Navbar() {
         {mobileMenuOpen && (
           <div className="lg:hidden border-t border-border/50 bg-background/95 backdrop-blur-lg">
             <div className="px-4 py-3 space-y-1">
-              {navItems.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className={cn(
-                    "block px-3 py-2 text-sm font-medium rounded-lg transition-all duration-200",
-                    pathname === item.href
-                      ? "text-white bg-primary/20 border border-primary/40"
-                      : "text-gray-300 hover:text-white hover:bg-white/5"
-                  )}
-                >
-                  {item.name}
-                </Link>
-              ))}
+              {navItems.map((item) => {
+                const Icon = item.icon
+                return (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={cn(
+                      "flex items-center gap-3 px-3 py-2.5 text-sm font-semibold rounded-lg transition-all duration-200",
+                      pathname === item.href
+                        ? "text-white bg-blue-500/20 border border-blue-400/50 shadow-[0_0_10px_rgba(59,130,246,0.3)]"
+                        : "text-white hover:text-white hover:bg-white/10 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
+                    )}
+                  >
+                    <Icon className="h-4 w-4 text-blue-400" />
+                    {item.name}
+                  </Link>
+                )
+              })}
             </div>
           </div>
         )}
