@@ -131,7 +131,7 @@ export default function ReportsPage() {
                 Analytics Reports
               </h1>
             </div>
-            <p className="text-gray-400 max-w-3xl">
+            <p className="text-white/80 max-w-3xl">
               Access comprehensive tourism analytics reports with detailed insights, 
               data visualizations, and actionable recommendations.
             </p>
@@ -152,9 +152,9 @@ export default function ReportsPage() {
                   </div>
                   
                   <h3 className="text-xl font-semibold text-white mb-2">{report.title}</h3>
-                  <p className="text-gray-400 text-sm mb-4 flex-1">{report.description}</p>
+                  <p className="text-white/80 text-sm mb-4 flex-1">{report.description}</p>
                   
-                  <div className="flex items-center gap-4 text-sm text-gray-500 mb-4">
+                  <div className="flex items-center gap-4 text-sm text-white/60 mb-4">
                     <span className="flex items-center gap-1">
                       <Calendar className="h-4 w-4" />
                       {report.date}
@@ -168,17 +168,10 @@ export default function ReportsPage() {
                   <div className="flex gap-3">
                     <button
                       onClick={() => setSelectedReport(report)}
-                      className="flex-1 px-4 py-2 rounded-lg bg-white/5 border border-white/10 text-white text-sm font-medium hover:bg-white/10 transition-colors flex items-center justify-center gap-2"
+                      className="w-full neon-button px-4 py-2 rounded-lg text-white text-sm font-medium flex items-center justify-center gap-2"
                     >
                       <Eye className="h-4 w-4" />
                       View Report
-                    </button>
-                    <button
-                      onClick={() => handleDownload(report.title)}
-                      className="flex-1 neon-button px-4 py-2 rounded-lg text-white text-sm font-medium flex items-center justify-center gap-2"
-                    >
-                      <Download className="h-4 w-4" />
-                      Download
                     </button>
                   </div>
                 </div>
@@ -204,7 +197,7 @@ export default function ReportsPage() {
                       <feature.icon className="h-6 w-6 text-blue-400" />
                     </div>
                     <h3 className="text-white font-medium mb-1">{feature.title}</h3>
-                    <p className="text-gray-400 text-sm">{feature.desc}</p>
+                    <p className="text-white/70 text-sm">{feature.desc}</p>
                   </div>
                 ))}
               </div>
@@ -250,19 +243,12 @@ export default function ReportsPage() {
               ))}
             </div>
 
-            <div className="mt-8 flex justify-end gap-4">
+            <div className="mt-8 flex justify-end">
               <button
                 onClick={() => setSelectedReport(null)}
-                className="px-6 py-2 rounded-lg bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-colors"
+                className="neon-button px-6 py-2 rounded-lg text-white font-medium"
               >
                 Close
-              </button>
-              <button
-                onClick={() => handleDownload(selectedReport.title)}
-                className="neon-button px-6 py-2 rounded-lg text-white font-medium flex items-center gap-2"
-              >
-                <Download className="h-4 w-4" />
-                Download Report
               </button>
             </div>
           </div>

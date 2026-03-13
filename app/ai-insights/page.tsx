@@ -134,7 +134,7 @@ export default function AIInsightsPage() {
                 AI-Powered Insights
               </h1>
             </div>
-            <p className="text-gray-400 max-w-3xl">
+            <p className="text-white/80 max-w-3xl">
               Leverage artificial intelligence to uncover hidden patterns, predict trends, 
               and gain actionable insights from our comprehensive tourism datasets.
             </p>
@@ -156,7 +156,7 @@ export default function AIInsightsPage() {
                     </div>
                     <div className="flex-1">
                       <h3 className="text-xl font-semibold text-white mb-2">{insight.title}</h3>
-                      <p className="text-gray-400 text-sm mb-4">{insight.summary}</p>
+                      <p className="text-white/70 text-sm mb-4">{insight.summary}</p>
                       <button
                         onClick={() => setSelectedInsight(insight)}
                         className="neon-button px-4 py-2 rounded-lg text-white text-sm font-medium inline-flex items-center gap-2"
@@ -183,7 +183,7 @@ export default function AIInsightsPage() {
                     <span className="text-blue-400 font-bold">1</span>
                   </div>
                   <h3 className="text-lg font-semibold text-white mb-2">Data Collection</h3>
-                  <p className="text-gray-400 text-sm">
+                  <p className="text-white/70 text-sm">
                     Aggregating data from 50+ countries, including government statistics, 
                     industry reports, and real-time travel data sources.
                   </p>
@@ -193,7 +193,7 @@ export default function AIInsightsPage() {
                     <span className="text-purple-400 font-bold">2</span>
                   </div>
                   <h3 className="text-lg font-semibold text-white mb-2">ML Analysis</h3>
-                  <p className="text-gray-400 text-sm">
+                  <p className="text-white/70 text-sm">
                     Advanced machine learning models identify patterns, correlations, 
                     and anomalies in tourism data across multiple dimensions.
                   </p>
@@ -203,7 +203,7 @@ export default function AIInsightsPage() {
                     <span className="text-green-400 font-bold">3</span>
                   </div>
                   <h3 className="text-lg font-semibold text-white mb-2">Insight Generation</h3>
-                  <p className="text-gray-400 text-sm">
+                  <p className="text-white/70 text-sm">
                     AI synthesizes findings into actionable insights with predictions 
                     and recommendations for stakeholders.
                   </p>

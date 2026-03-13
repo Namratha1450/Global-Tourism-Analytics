@@ -3,7 +3,8 @@
 import { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Menu, X, Github, Linkedin, Mail, Globe, Home, Plane, Leaf, BarChart3, Bot, FileText, Info } from "lucide-react"
+import { Menu, X, Github, Linkedin, Mail, Globe, Home, Plane, Leaf, BarChart3, Bot, FileText, Info, LogOut } from "lucide-react"
+import { useRouter } from "next/navigation"
 import { cn } from "@/lib/utils"
 
 const navItems = [
@@ -20,6 +21,12 @@ export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [profileOpen, setProfileOpen] = useState(false)
   const pathname = usePathname()
+  const router = useRouter()
+
+  const handleLogout = () => {
+    setProfileOpen(false)
+    router.push("/login")
+  }
 
   return (
     <>
@@ -123,12 +130,12 @@ export function Navbar() {
                 NCG
               </div>
               <h2 className="text-2xl font-bold text-white mb-2">Namratha Chowdary Gundapuneedi</h2>
-              <p className="text-gray-400 mb-6">Developer</p>
+              <p className="text-white/80 mb-6">Developer</p>
 
               <div className="space-y-4">
                 <a
                   href="mailto:namrathachowdarygundapuneedi@gmail.com"
-                  className="flex items-center gap-3 p-3 rounded-lg bg-white/5 hover:bg-white/10 transition-colors text-gray-300 hover:text-white"
+                  className="flex items-center gap-3 p-3 rounded-lg bg-white/5 hover:bg-white/10 transition-colors text-white hover:text-white"
                 >
                   <Mail className="h-5 w-5 text-blue-400" />
                   <span className="text-sm truncate">namrathachowdarygundapuneedi@gmail.com</span>
@@ -138,7 +145,7 @@ export function Navbar() {
                   href="https://github.com/Namratha1450"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 p-3 rounded-lg bg-white/5 hover:bg-white/10 transition-colors text-gray-300 hover:text-white"
+                  className="flex items-center gap-3 p-3 rounded-lg bg-white/5 hover:bg-white/10 transition-colors text-white hover:text-white"
                 >
                   <Github className="h-5 w-5 text-blue-400" />
                   <span className="text-sm">github.com/Namratha1450</span>
@@ -148,11 +155,20 @@ export function Navbar() {
                   href="https://www.linkedin.com/in/namratha-chowdary-gundapuneedi"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 p-3 rounded-lg bg-white/5 hover:bg-white/10 transition-colors text-gray-300 hover:text-white"
+                  className="flex items-center gap-3 p-3 rounded-lg bg-white/5 hover:bg-white/10 transition-colors text-white hover:text-white"
                 >
                   <Linkedin className="h-5 w-5 text-blue-400" />
                   <span className="text-sm">LinkedIn Profile</span>
                 </a>
+
+                {/* Logout Button */}
+                <button
+                  onClick={handleLogout}
+                  className="w-full flex items-center gap-3 p-3 rounded-lg bg-red-500/10 hover:bg-red-500/20 border border-red-500/20 transition-colors text-red-400 hover:text-red-300"
+                >
+                  <LogOut className="h-5 w-5" />
+                  <span className="text-sm font-medium">Logout</span>
+                </button>
               </div>
             </div>
           </div>

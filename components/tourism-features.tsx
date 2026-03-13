@@ -29,7 +29,7 @@ export function FuturePrediction() {
         <h3 className="text-2xl font-bold text-white">Future Tourism Prediction</h3>
       </div>
 
-      <p className="text-gray-400 mb-6">
+      <p className="text-white/70 mb-6">
         Based on current trends and AI analysis, these destinations are projected to see 
         significant tourism growth driven by infrastructure improvements, visa policies, 
         and growing tourism investment.
@@ -42,7 +42,7 @@ export function FuturePrediction() {
               <h4 className="text-lg font-semibold text-white">{pred.country}</h4>
               <span className="text-green-400 font-bold">{pred.growth}</span>
             </div>
-            <p className="text-gray-400 text-sm mb-3">Growth Factors:</p>
+            <p className="text-white/70 text-sm mb-3">Growth Factors:</p>
             <ul className="space-y-2">
               {pred.factors.map((factor) => (
                 <li key={factor} className="flex items-center gap-2 text-gray-300 text-sm">
@@ -66,7 +66,7 @@ export function FuturePrediction() {
           ].map((stat) => (
             <div key={stat.label} className="text-center">
               <p className="text-2xl font-bold text-green-400">{stat.value}</p>
-              <p className="text-gray-400 text-xs">{stat.label}</p>
+              <p className="text-white/70 text-xs">{stat.label}</p>
             </div>
           ))}
         </div>
@@ -91,7 +91,7 @@ export function ExpenseAnalysis() {
         <h3 className="text-2xl font-bold text-white">Tourist Expense Analysis</h3>
       </div>
 
-      <p className="text-gray-400 mb-6">
+      <p className="text-white/70 mb-6">
         Understanding how tourists allocate their spending helps destinations optimize 
         services and improve visitor experience. Average tourist spending: $1,245 per trip.
       </p>
@@ -100,7 +100,7 @@ export function ExpenseAnalysis() {
         {expenses.map((expense) => (
           <div key={expense.category} className="flex items-center gap-4">
             <div className="w-32 flex items-center gap-2">
-              <expense.icon className="h-4 w-4 text-gray-400" />
+              <expense.icon className="h-4 w-4 text-white/60" />
               <span className="text-gray-300 text-sm">{expense.category}</span>
             </div>
             <div className="flex-1">
@@ -122,15 +122,15 @@ export function ExpenseAnalysis() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div className="bg-white/5 rounded-xl p-4 text-center">
           <p className="text-3xl font-bold text-white">$1,245</p>
-          <p className="text-gray-400 text-sm">Average Trip Spending</p>
+          <p className="text-white/70 text-sm">Average Trip Spending</p>
         </div>
         <div className="bg-white/5 rounded-xl p-4 text-center">
           <p className="text-3xl font-bold text-white">7.2 Days</p>
-          <p className="text-gray-400 text-sm">Average Stay Duration</p>
+          <p className="text-white/70 text-sm">Average Stay Duration</p>
         </div>
         <div className="bg-white/5 rounded-xl p-4 text-center">
           <p className="text-3xl font-bold text-white">$173/day</p>
-          <p className="text-gray-400 text-sm">Daily Spending Average</p>
+          <p className="text-white/70 text-sm">Daily Spending Average</p>
         </div>
       </div>
     </div>

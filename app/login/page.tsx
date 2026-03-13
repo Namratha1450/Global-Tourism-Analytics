@@ -44,7 +44,7 @@ export default function LoginPage() {
             <Globe className="h-8 w-8 text-white" />
           </div>
           <h1 className="text-3xl font-bold text-white">Tourism Analytics</h1>
-          <p className="text-gray-400 mt-2">Global Tourism Intelligence Platform</p>
+          <p className="text-white/80 mt-2">Global Tourism Intelligence Platform</p>
         </div>
 
         {/* Login Card */}
@@ -56,7 +56,7 @@ export default function LoginPage() {
           <form onSubmit={handleSubmit} className="space-y-5">
             {/* Email Field */}
             <div>
-              <label className="block text-sm font-medium text-gray-300 mb-2">
+              <label className="block text-sm font-medium text-white mb-2">
                 Email Address
               </label>
               <div className="relative">
@@ -74,7 +74,7 @@ export default function LoginPage() {
 
             {/* Password Field */}
             <div>
-              <label className="block text-sm font-medium text-gray-300 mb-2">
+              <label className="block text-sm font-medium text-white mb-2">
                 Password
               </label>
               <div className="relative">
@@ -100,7 +100,7 @@ export default function LoginPage() {
             {/* Confirm Password (Register only) */}
             {isRegister && (
               <div>
-                <label className="block text-sm font-medium text-gray-300 mb-2">
+                <label className="block text-sm font-medium text-white mb-2">
                   Confirm Password
                 </label>
                 <div className="relative">
@@ -114,6 +114,20 @@ export default function LoginPage() {
                     className="w-full pl-12 pr-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all"
                   />
                 </div>
+              </div>
+            )}
+
+            {/* Remember Me Checkbox */}
+            {!isRegister && (
+              <div className="flex items-center gap-2">
+                <input
+                  type="checkbox"
+                  id="remember"
+                  className="h-4 w-4 rounded border-white/20 bg-white/5 text-blue-500 focus:ring-blue-500 focus:ring-offset-0"
+                />
+                <label htmlFor="remember" className="text-sm text-white">
+                  Remember me
+                </label>
               </div>
             )}
 
@@ -139,7 +153,7 @@ export default function LoginPage() {
 
           {/* Toggle Register/Login */}
           <div className="mt-6 text-center">
-            <p className="text-gray-400">
+            <p className="text-white/80">
               {isRegister ? "Already have an account?" : "Don't have an account?"}
               <button
                 onClick={() => setIsRegister(!isRegister)}
@@ -152,7 +166,7 @@ export default function LoginPage() {
 
           {/* Skip to Home */}
           <div className="mt-4 text-center">
-            <Link href="/" className="text-gray-500 hover:text-gray-300 text-sm transition-colors">
+            <Link href="/" className="text-white/60 hover:text-white text-sm transition-colors">
               Continue as guest
             </Link>
           </div>

@@ -82,14 +82,14 @@ export function DataExplorer() {
         <h3 className="text-2xl font-bold text-white">Tourism Data Explorer</h3>
       </div>
 
-      <p className="text-gray-400 mb-6">
+      <p className="text-white/70 mb-6">
         Select a country, year, and metric to explore detailed tourism data and insights.
       </p>
 
       {/* Selectors */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
         <div>
-          <label className="block text-sm font-medium text-gray-300 mb-2">Country</label>
+          <label className="block text-sm font-medium text-white mb-2">Country</label>
           <select
             value={country}
             onChange={(e) => setCountry(e.target.value)}
@@ -101,7 +101,7 @@ export function DataExplorer() {
           </select>
         </div>
         <div>
-          <label className="block text-sm font-medium text-gray-300 mb-2">Year</label>
+          <label className="block text-sm font-medium text-white mb-2">Year</label>
           <select
             value={year}
             onChange={(e) => setYear(e.target.value)}
@@ -113,7 +113,7 @@ export function DataExplorer() {
           </select>
         </div>
         <div>
-          <label className="block text-sm font-medium text-gray-300 mb-2">Metric</label>
+          <label className="block text-sm font-medium text-white mb-2">Metric</label>
           <select
             value={metric}
             onChange={(e) => setMetric(e.target.value)}
@@ -130,7 +130,7 @@ export function DataExplorer() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Value Card */}
         <div className="bg-white/5 rounded-xl p-6 border border-white/10">
-          <p className="text-gray-400 text-sm mb-2">{metric}</p>
+          <p className="text-white/70 text-sm mb-2">{metric}</p>
           <div className="flex items-end gap-3">
             <p className="text-4xl font-bold text-white">{data.value}</p>
             <div className={`flex items-center gap-1 pb-1 ${data.trend >= 0 ? 'text-green-400' : 'text-red-400'}`}>

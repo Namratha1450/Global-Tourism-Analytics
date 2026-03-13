@@ -103,7 +103,7 @@ export default function HomePage() {
                     <stat.icon className="h-7 w-7 text-blue-400" />
                   </div>
                   <p className="text-4xl font-bold text-white mb-2">{stat.value}</p>
-                  <p className="text-gray-400">{stat.label}</p>
+                  <p className="text-white/70">{stat.label}</p>
                 </div>
               ))}
             </div>
@@ -117,7 +117,7 @@ export default function HomePage() {
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
                 Interactive Dashboards
               </h2>
-              <p className="text-gray-400 max-w-2xl mx-auto">
+              <p className="text-white/70 max-w-2xl mx-auto">
                 Explore comprehensive tourism analytics through our Power BI integrated dashboards
               </p>
             </div>
@@ -135,7 +135,7 @@ export default function HomePage() {
                   <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-blue-400 transition-colors">
                     {dashboard.title}
                   </h3>
-                  <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                  <p className="text-white/70 text-sm leading-relaxed mb-4">
                     {dashboard.description}
                   </p>
                   <span className="inline-flex items-center gap-2 text-blue-400 text-sm font-medium group-hover:gap-3 transition-all">
@@ -180,7 +180,7 @@ export default function HomePage() {
                   <div className="aspect-video rounded-2xl bg-gradient-to-br from-blue-600/20 to-purple-600/20 border border-white/10 flex items-center justify-center">
                     <div className="text-center">
                       <Users className="h-16 w-16 text-blue-400 mx-auto mb-4" />
-                      <p className="text-gray-400">Interactive Analytics</p>
+                      <p className="text-white/70">Interactive Analytics</p>
                     </div>
                   </div>
                 </div>
@@ -223,7 +223,7 @@ export default function HomePage() {
             <h2 className="text-3xl font-bold text-white mb-4">
               Stay Updated
             </h2>
-            <p className="text-gray-400 mb-8">
+            <p className="text-white/70 mb-8">
               Receive tourism analytics insights directly in your inbox
             </p>
             <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">

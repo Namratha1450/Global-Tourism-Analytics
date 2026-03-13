@@ -91,7 +91,7 @@ export default function AboutPage() {
                   ].map((stat) => (
                     <div key={stat.label} className="bg-white/5 rounded-2xl p-6 text-center">
                       <p className="text-3xl font-bold text-white mb-1">{stat.value}</p>
-                      <p className="text-gray-400 text-sm">{stat.label}</p>
+                      <p className="text-white/70 text-sm">{stat.label}</p>
                     </div>
                   ))}
                 </div>
@@ -105,7 +105,7 @@ export default function AboutPage() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-white mb-4">Dashboard Insights</h2>
-              <p className="text-gray-400 max-w-2xl mx-auto">
+              <p className="text-white/70 max-w-2xl mx-auto">
                 Our dashboards provide comprehensive insights into various aspects of tourism
               </p>
             </div>
@@ -117,7 +117,7 @@ export default function AboutPage() {
                     <feature.icon className="h-6 w-6 text-blue-400" />
                   </div>
                   <h3 className="text-xl font-semibold text-white mb-3">{feature.title}</h3>
-                  <p className="text-gray-400 text-sm leading-relaxed">{feature.description}</p>
+                  <p className="text-white/70 text-sm leading-relaxed">{feature.description}</p>
                 </div>
               ))}
             </div>
@@ -129,7 +129,7 @@ export default function AboutPage() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-white mb-4">Data Coverage</h2>
-              <p className="text-gray-400 max-w-2xl mx-auto">
+              <p className="text-white/70 max-w-2xl mx-auto">
                 Comprehensive datasets powering our analytics platform
               </p>
             </div>
@@ -161,7 +161,7 @@ export default function AboutPage() {
             <div className="glass-card rounded-3xl p-8 md:p-12">
               <div className="text-center mb-10">
                 <h2 className="text-3xl font-bold text-white mb-4">Built with Modern Technology</h2>
-                <p className="text-gray-400 max-w-2xl mx-auto">
+                <p className="text-white/70 max-w-2xl mx-auto">
                   Our platform leverages cutting-edge technologies to deliver seamless analytics experiences
                 </p>
               </div>
