@@ -47,7 +47,17 @@ export default function HomePage() {
 
       <main className="page-transition">
         {/* Hero Section */}
-        <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+        <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+          {/* Cinematic Background Image */}
+          <div className="absolute inset-0">
+            <div 
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-zoom"
+              style={{ backgroundImage: "url('/images/hero-background.jpg')" }}
+            />
+            {/* Dark overlay gradient for text readability */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-[#0a0a1a]/80 to-[#0a0a1a]" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-black/50" />
+          </div>
           <div className="absolute inset-0 overflow-hidden">
             <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl" />
             <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl" />
