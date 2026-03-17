@@ -1,4 +1,4 @@
-import { TrendingUp, DollarSign, Clock, Percent, BarChart3, PieChart } from "lucide-react"
+import { TrendingUp, DollarSign, Clock, Percent, BarChart3, PieChart, Plane } from "lucide-react"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { Particles } from "@/components/particles"
@@ -46,11 +46,11 @@ export default function TourismEconomicPage() {
         <section className="py-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
-                <TrendingUp className="h-6 w-6 text-white" />
+              <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center">
+                <Plane className="h-6 w-6 text-white" />
               </div>
               <h1 className="text-3xl sm:text-4xl font-bold text-white">
-                Tourism Economic Dashboard
+                Travel Analytics Dashboard
               </h1>
             </div>
             <p className="text-gray-400 max-w-3xl">

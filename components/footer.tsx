@@ -27,7 +27,7 @@ export function Footer() {
               <Github className="h-4 w-4" />
             </a>
             <a
-              href="https://www.linkedin.com/in/namratha-chowdary-gundapuneedi"
+              href="https://www.linkedin.com/in/namratha-chowdary-gundapuneedi/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-white/60 hover:text-white transition-all"

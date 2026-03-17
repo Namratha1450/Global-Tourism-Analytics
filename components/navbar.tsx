@@ -10,9 +10,9 @@ import { cn } from "@/lib/utils"
 const navItems = [
   { name: "Home", href: "/", icon: Home },
   { name: "About", href: "/about", icon: Info },
-  { name: "Travel Analytics", href: "/travel-behaviour", icon: Plane },
+  { name: "Economic Impact", href: "/travel-behaviour", icon: BarChart3 },
   { name: "Sustainability", href: "/environmental-impact", icon: Leaf },
-  { name: "Economic Impact", href: "/tourism-economic", icon: BarChart3 },
+  { name: "Travel Analytics", href: "/tourism-economic", icon: Plane },
   { name: "Insights", href: "/ai-insights", icon: Bot },
   { name: "Reports", href: "/reports", icon: FileText },
 ]
@@ -152,7 +152,7 @@ export function Navbar() {
                 </a>
 
                 <a
-                  href="https://www.linkedin.com/in/namratha-chowdary-gundapuneedi"
+                  href="https://www.linkedin.com/in/namratha-chowdary-gundapuneedi/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 p-3 rounded-lg bg-white/5 hover:bg-white/10 transition-colors text-white hover:text-white"
