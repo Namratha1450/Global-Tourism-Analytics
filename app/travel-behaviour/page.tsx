@@ -79,10 +79,10 @@ export default function TravelBehaviourPage() {
           <div className="max-w-7xl mx-auto">
             <div className="dashboard-container">
               <iframe
-                title="Travel Behaviour Dashboard"
+                title="Tourism Economic Dashboard"
                 width="100%"
                 height="650"
-                src="https://app.powerbi.com/view?r=eyJrIjoiYWNhOTNiYmYtMzU3My00ZjI0LTg4MjYtNjViN2NmNWMxMzVhIiwidCI6ImFiMTUzYjlmLTJjNzUtNDhiZC05NWMzLTg0ZmVkY2MyYjQ5MSJ9&pageName=410f52545a0c868c816b"
+                src="https://app.powerbi.com/view?r=eyJrIjoiYWNhOTNiYmYtMzU3My00ZjI0LTg4MjYtNjViN2NmNWMxMzVhIiwidCI6ImFiMTUzYjlmLTJjNzUtNDhiZC05NWMzLTg0ZmVkY2MyYjQ5MSJ9&pageName=b24f70e81105b5711355"
                 frameBorder="0"
                 allowFullScreen={true}
                 className="w-full"
