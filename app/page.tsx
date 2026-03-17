@@ -17,11 +17,11 @@ const stats = [
 
 const dashboards = [
   {
-    title: "Travel Behaviour Dashboard",
-    description: "Analyze travel patterns, airport traffic, visa approvals, and tourism investment trends across multiple countries.",
-    icon: Plane,
+    title: "Economic Impact Dashboard",
+    description: "Track tourism revenue, GDP contribution, average stay duration, and revenue distribution by country.",
+    icon: BarChart3,
     href: "/travel-behaviour",
-    gradient: "from-blue-500 to-cyan-500",
+    gradient: "from-purple-500 to-pink-500",
   },
   {
     title: "Tourism Social Environmental Impact",
@@ -31,11 +31,11 @@ const dashboards = [
     gradient: "from-green-500 to-emerald-500",
   },
   {
-    title: "Tourism Economic Dashboard",
-    description: "Track tourism revenue, GDP contribution, average stay duration, and revenue distribution by country.",
-    icon: TrendingUp,
+    title: "Travel Analytics Dashboard",
+    description: "Analyze travel patterns, airport traffic, visa approvals, and tourism investment trends across multiple countries.",
+    icon: Plane,
     href: "/tourism-economic",
-    gradient: "from-purple-500 to-pink-500",
+    gradient: "from-blue-500 to-cyan-500",
   },
 ]
 
