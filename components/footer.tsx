@@ -11,7 +11,9 @@ export function Footer() {
           
           <div className="flex items-center gap-3">
             <a
-              href="mailto:namrathachowdarygundapuneedi@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=namrathachowdarygundapuneedi@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-white/60 hover:text-white transition-all"
               title="Email"
             >

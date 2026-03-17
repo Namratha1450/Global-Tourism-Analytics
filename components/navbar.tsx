@@ -134,7 +134,9 @@ export function Navbar() {
 
               <div className="space-y-4">
                 <a
-                  href="mailto:namrathachowdarygundapuneedi@gmail.com"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=namrathachowdarygundapuneedi@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-3 p-3 rounded-lg bg-white/5 hover:bg-white/10 transition-colors text-white hover:text-white"
                 >
                   <Mail className="h-5 w-5 text-blue-400" />
