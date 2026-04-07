@@ -1,35 +1,74 @@
-# Global-Tourism-Analytics
+# 🌍 Global Tourism Analytics Dashboard
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
+This project focuses on analyzing global tourism trends and holiday patterns using **Power BI**.
 
-## Built with v0
+---
 
-This repository is linked to a [v0](https://v0.app) project. You can continue developing by visiting the link below -- start new chats to make changes, and v0 will push commits directly to this repo. Every merge to `main` will automatically deploy.
+## 📊 Project Overview
 
-[Continue working on v0 →](https://v0.app/chat/projects/prj_3jP0F58gLQuT5259c8e8VIamy5nD)
+The goal of this project is to extract meaningful insights from global tourism data and visualize them using interactive dashboards.
 
-## Getting Started
+---
 
-First, run the development server:
+## 🛠️ Tools Used
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- Power BI
+- Data Cleaning & Preprocessing
+- Data Visualization Techniques
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📌 Key Features
 
-## Learn More
+- Interactive dashboard with multiple visualizations
+- Geographic map to analyze country-wise tourism
+- Monthly and yearly trend analysis
+- KPI cards for quick insights
+- Filters for dynamic data exploration
 
-To learn more, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [v0 Documentation](https://v0.app/docs) - learn about v0 and how to use it.
+## 🔍 Data Analysis Process
 
-<a href="https://v0.app/chat/api/kiro/clone/Namratha1450/Global-Tourism-Analytics" alt="Open in Kiro"><img src="https://pdgvvgmkdvyeydso.public.blob.vercel-storage.com/open%20in%20kiro.svg?sanitize=true" /></a>
+### 1️⃣ Data Collection
+- Collected global tourism dataset
+
+### 2️⃣ Data Cleaning
+- Removed missing values
+- Standardized formats
+- Transformed raw data
+
+### 3️⃣ Visualization
+- Bar Charts
+- Line Charts
+- Pie Charts
+- Heatmaps
+- KPI Indicators
+
+---
+
+## 📈 Insights Gained
+
+- Identified peak travel months
+- Analyzed regional tourism trends
+- Compared holiday patterns across countries
+- Derived business insights for decision making
+
+---
+
+## 📸 Dashboard Preview
+
+(Add your Power BI screenshot here)
+
+---
+
+## 🚀 Project Outcome
+
+This project helped in understanding real-world data analysis workflows and building professional dashboards for business insights.
+
+---
+
+## 📬 Contact
+
+- GitHub: https://github.com/Namratha1450
+- LinkedIn: https://linkedin.com/in/namratha-chowdary-gundapuneedi
