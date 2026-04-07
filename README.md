@@ -58,7 +58,14 @@ The goal of this project is to extract meaningful insights from global tourism d
 
 ## 📸 Dashboard Preview
 
-(Add your Power BI screenshot here)
+### 🔹 Dashboard 1
+![Dashboard 1](./dashboard1.png)
+
+### 🔹 Dashboard 2
+![Dashboard 2](./dashboard2.png)
+
+### 🔹 Dashboard 3
+![Dashboard 3](./dashboard3.png)
 
 ---
 
